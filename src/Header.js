@@ -22,7 +22,7 @@ function Header() {
     fetch("/api/search/?searchValue=" + searchValue)
       .then(res => res.json())
       .then(json => json.search)
-      // .then(value => alert(value))
+      .then(value => alert(value))
       .catch(err => console.log(err));
   };
 
